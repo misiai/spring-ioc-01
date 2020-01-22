@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--    注册一个Student类-->
+    <bean id="student01" class="com.misiai.bean.Student">
+        <!--class告诉容器bean注册的是类的全限定类名，需要根据自己的报名更改-->
+        <property name="name" value="kuan"/>
+        <property name="sno" value="10001"/>
+        <!--property为属性赋值-->
+    </bean>
+    <!--    注册一个Student类-->
+    <bean id="student02" class="com.misiai.bean.Student">
+        <!--class告诉容器bean注册的是类的全限定类名，需要根据自己的报名更改-->
+        <property name="name" value="Misiai"/>
+        <property name="sno" value="10002"/>
+        <!--property为属性赋值-->
+    </bean>
+    <!--注册一个Student03-->
+    <bean id="student03" class="com.misiai.bean.Student">
+        <!--通过有参构造器赋值-->
+        <constructor-arg name="name" value="student03"/>
+        <constructor-arg name="sno" value="10003"/>
+    </bean>
+    <!--注册一个Student04-->
+    <bean id="student04" class="com.misiai.bean.Student"
+          p:name="student04" p:sno="10004">
+    </bean>
+
+</beans>
