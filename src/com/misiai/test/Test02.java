@@ -9,6 +9,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 /*测试bean中，为各种类型赋值*/
 public class Test02 {
     ApplicationContext ap = new ClassPathXmlApplicationContext("spring-ioc-2.xml");
+
     @Test
     public void test05() {
         Student student05 = ap.getBean("student05", Student.class);

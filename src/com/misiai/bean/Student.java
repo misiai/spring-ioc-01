@@ -10,6 +10,24 @@ public class Student {
     /*为student类添加各种类型*/
     private Car car;
     private List<Book> books;
+    private Double salary;
+
+
+
+
+
+    public Double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(Double salary) {
+        this.salary = salary;
+    }
+
+    public Student(Car car) {
+        this.car = car;
+        System.out.println("Student的car构造器");
+    }
 
     public Map<String, Object> getMap() {
         return map;

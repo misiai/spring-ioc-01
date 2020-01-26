@@ -81,7 +81,7 @@
     </bean>
 
     <!--bean信息的重用-->
-    <bean id="student05" class="com.misiai.bean.Student">
+    <bean id="student05" class="com.misiai.bean.Student" abstract="true">
         <property name="name" value="Misiai"/>
         <property name="sno" value="10003"/>
     </bean>

@@ -3,6 +3,11 @@ package com.misiai.bean;
 public class Car {
     private String name;
 
+    public Car() {
+        System.out.println("car 被创建！");
+    }
+
+
     public String getName() {
         return name;
     }
